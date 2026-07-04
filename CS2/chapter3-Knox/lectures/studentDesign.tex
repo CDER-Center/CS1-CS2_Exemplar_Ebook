@@ -1,0 +1,188 @@
+%student-created design problems
+
+\documentclass{article}
+
+\usepackage{course}
+\usepackage{verbatim}
+\usepackage{fullpage}
+
+\def\handout{Your design problems}
+\def\coursenum{142}
+\def\coursetitle{Program design and methodology}
+\def\courseterm{Spring}
+\def\courseyear{2025}
+\parskip 6pt
+\parindent 0pt
+
+\begin{document}
+
+Describe how you could solve each of the following problems using data
+structures we've learned so far.
+Specify the ADTs (List, Stack, Queue, Iterator, Set, Map, Priority Queue) you
+would use and how to use them to efficiently support the required
+operations.
+
+\begin{enumerate}
+
+\item 
+  You are managing a Fantasy Knox College Soccer League where students
+  can create their own teams by selecting real players from the Knox
+  College men’s soccer team. Each student builds a fantasy team by
+  choosing players from the official men's soccer roster. Throughout
+  the season, players earn points based on match performances such as
+  scoring goals, making assists, keeping clean sheets (when
+  goalkeepers or defenders don’t concede any goals) or making saves.
+  To begin your system, you need to return a participant's roster based
+  on their participant ID.
+  What ADT(s) would you use to implement this functionality?
+  %map from ID to list of players.
+
+\item 
+  In a futuristic city, we have aliens that frequently visit the Earth from their planets. We
+use the Interplanetary Identification System (IIS) to verify each alien's identity. Every
+alien is identified by a unique ID (a string like ``ZQ-8G9D''), along with their planet of
+origin (string) and birthday (string). The IIS must allow new aliens to be registered
+(added to the system) based on this information, existing aliens to be removed when
+necessary, and provide a way to find an alien’s information by searching for their unique
+ID. What ADT(s) would you use to implement this system in the most efficient way
+possible?
+%map from login information (ID, planel, and birthday) to record about
+%that alien
+
+\item 
+  In {\em Magic: The Gathering} players play as wizards who cast
+  spells. When each spell is cast, but before its effects happen, the
+  other players have a chance to respond and cast their own spell,
+  which the other players can respond to, and so on and so forth. Once
+  no player responds to a spell, the effects of all the spells are
+  applied, starting with the latest spell and working backwards
+  chronologically. What data structure(s) should be used to store the
+  spells that have been cast, and resolve them in the correct order?
+  %stack
+  
+\item 
+  Sephora is a popular beauty and cosmetics retailer that sells
+  makeup, skincare, haircare, and other beauty products both in
+  physical stores and online. Many customers shop through Sephora’s
+  website, placing orders for products such as ``Too Faced
+  Foundation'' or ``Fenty Lip Gloss''. Imagine you are creating a
+  simple application to help customers keep track of their online
+  Sephora orders. Each order has a unique ID (like ``ORD123'') and
+  includes a list of products the customer purchased. The system will
+  create a record of the order when it is placed.
+  Then customers will be able to look up the order information using its ID.
+What ADT(s) would be best to implement this system?
+%map from ID to order information
+
+\item 
+  You are simulating a game of Hangman. In this game, players must
+  guess letters to spell out a hidden word. Once they guess a letter,
+  it will be revealed where it is in the word if it is present, or, if
+  it is not present within the word, it will be added to a pool of
+  incorrect guesses, and another line will be drawn in a picture. If a
+  player attempts to guess a letter that has already been guessed,
+  they will be asked to guess again with no penalty. What ADT(s) would
+  you use to store specifically the incorrect guesses?
+  %set of chars
+
+\item 
+  You work for the Knox College scene shop. The scene shop holds
+  hundreds of lighting instruments of different types (source 4,
+  parnell, scoops). Each type of instrument has different
+  parameters (the source 4s have different degree barrels, the parnells
+  have different colored gels changing the output of the light, the
+  scoops have no parameters, ect). Each light has an ID
+  assigned to it (H-47 for example), and that is how we tell them
+  apart. The user wants to look up the instruments by the ID, and get
+  the type of light, and what might be attached to the light (type of
+  lens, type of gel). 
+  What ADT(s) would you use to implement this?
+  %map from ID to information
+  
+\item 
+  A public library wants to create a book hold function where customers can place a book on hold that is currently checked out, and as soon as it is returned, it goes to the next customer in line. The functions that need to be included are:
+  \begin{itemize}
+    \item  placeHold that records a customer wants a certain book,
+    \item cancelHold that removes a customer from the waitlist, and 
+    \item seeNextCustomer that returns the customer that is next in line for the book
+  \end{itemize}
+  Each of these takes the title of the book whose record is being examined and the
+  first two also take the customer information.
+  %map from book to list of customers on the waitlist (list to support remove)
+
+\item 
+  You have been asked to create a playlist feature system by a popular
+  music streaming company for its music application, enabling its
+  users to create new playlists and customize them. Each playlist
+  should maintain an ordered list of songs, each represented as words
+  (such as song title). The system must support the following
+  operations for each playlist: add a song to the end of the list,
+  insert a song at a given position, remove a song by title, and a
+  "Next" function that allows the user to play the next song one at a
+  time. Users should also be able to loop through the playlist in
+  order and reset it once they reach the end of the playlist.
+  What ADT(s) would you use to implement the playlist data structure?
+  %List
+
+\item 
+  Knox College finally hired people to deliver foods and groceries in
+  Gizmo and C-store, and you are required to write a code to assign
+  students a job. The order of the job has to be first-come
+  first-serve. It means that a delivery worker has to deliver the
+  package in the order they come in, even if there is no tip and it is
+  just one toothpaste. A delivery worker has to know a student’s ID,
+  name, location, and items.
+  What ADT(s) would you use to implement this system?
+  %queue
+  
+\item 
+  The SMC building has a lot of rooms that students can reserve throughout the day.
+Each reservation includes a start time, end time, student name, ID number, and the
+room name. The scheduler must allow the following operations:
+\begin{itemize}
+\item Add a reservation if the room is available during the requested time.
+\item Cancel a reservation, identifying it by room number, student name, ID number, and time.
+\item Retrieve a list of all reservations for a specific room, sorted by
+start time.
+\end{itemize}
+What ADT(s) would you use to implement these operations?
+%map from room name to treeset of reservations (ordered by time)
+%answer is actually a bit subtle; want value to be BST so you can
+%check for overlapping times.  To use a set, need to redefine the
+%comparator so that events with overlapping times are equal
+
+\item 
+  It is the end of the school year and students need to choose their
+  residence hall for next year.
+These are chosen based on their class year: first come last year
+students, then juniors, then sophomores, and then first years.
+If students have the same class year, they are ordered by when they
+completed the housing form.
+What ADT(s) would you use to keep track of all the students and print
+their names in the desired order?
+%multiple queues
+
+\item 
+  A library is working on creating a new digital catalog for their
+  collection. They will create a listing for each book that has the book's title, author, genre summary/description. People should be able to look up the book by its title. What ADT(s) would be used to implement this?
+%map from title to book information
+  
+\item 
+  You have a shoe rack that can hold exactly 8 shoes at a time. However, you own 9 shoes in total.
+One shoe is always on your feet, while the other 8 are stored in the rack. Every time you come
+home and pick a shoe from any specific position on the rack (positions 0 through 7), the shoe
+you are currently wearing gets placed in that position on the rack, and the newly picked shoe
+becomes the one you are now wearing.
+You need to design a system that does the following:
+(a) Initializes the rack with 8 shoes and one worn shoe,
+(b) Let's you pick a shoe from a specific index and replaces it with
+the currently worn shoe,
+(c) Always knows which shoe is currently worn and
+(d) Reports which shoe was picked and which shoe was placed into
+    the rack when you change shoes.
+What ADT(s) would you use to implement this functionality?
+%array or arraylist
+
+\end{enumerate}
+
+\end{document}
