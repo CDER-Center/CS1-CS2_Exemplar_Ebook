@@ -1,0 +1,107 @@
+\documentclass{article}
+
+\usepackage{course}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{url}
+
+\newcommand{\code}[1]{{\tt #1}}
+\newcommand{\class}[1]{{\tt #1}}
+
+\def\handout{Lab 8}
+\def\coursenum{142}
+\def\coursetitle{Program design and methodology}
+\def\courseterm{Spring}
+\def\courseyear{2026}
+\parskip 6pt
+\parindent 0pt
+
+\begin{document}
+
+In this lab, you'll be parallelizing a program to count prime numbers.
+(These are the positive integers that are only divided without
+remainder by themselves and one.)
+
+\subsection*{The Fork-Join Framework}
+
+Begin by downloading the given code ({\tt lab8given.zip}).
+Unzip this and open the folder {\tt lab8-primes} it contains as a
+Java project.
+
+This project contains several programs (in the {\tt src} subfolder).
+Begin by looking at {\tt SumArray.java}, which is the 
+program to sum an array using the fork-join framework.
+This uses the actual Java version of the framework instead of the
+convenient {\tt fork} and {\tt join} keywords we used in class.
+%Go over this to refresh yourself with how to use the framework.
+A couple of things to notice:
+\begin{itemize}
+  \item It uses a class {\tt SumArray} to represent a piece of work,
+    basically a subarray to sum.
+    This class extends {\tt RecursiveTask<Integer>}, with the
+    {\tt Integer} being the type of value returned by the computation.
+    (Java has features that let us pretend that it returns {\tt int}.)
+  \item The work is done by the {\tt compute} method, which can't take
+    arguments.
+    Thus, the part of the array to sum is controlled by the {\tt hi}
+    and {\tt low} attributes, which are set in the constructor.
+  \item The last paragraph of code in {\tt main} initiates the computation.
+    It puts a single task responsible for summing the entire array
+    into a ``pool'' of tasks to be completed.
+    This is a collection of tasks that the processors will draw from
+    whenever they are idle.
+    Tasks created during the recursion are automatically added to the
+    same pool.
+\end{itemize}
+Look at all of these to understand how to structure computations in
+this framework.
+(It's definitely more complicated than the {\tt fork} and {\tt join}
+keywords, but you can refer back to this version as needed.)
+
+Once you're ready, you're going to apply the fork-join framework to a
+new problem. 
+This problem will be counting prime numbers, those that are only
+exactly divisible by themselves and 1.
+(The first several prime numbers are 2, 3, 5, 7, 11, 13.)
+{\tt SerialPrimes.java} contains a serial program to count the number
+of primes between 3 and 2,000,000.
+We're not counting 2 because it's the only even prime number.
+For the odd prime numbers, we're going to represent them in the form
+$2*\mathtt{num}+1$ where $1 \leq \mathtt{num} < 999,999$.
+By working in terms of {\tt num} rather than the number itself, our loop can
+use contiguous indices and we know that all the potential primes being
+considered are odd.
+The use of contiguous indices simplifies our parallelization of this program.
+
+Once you're comfortable with this code, use the fork-join framework to
+parallelize {\tt ForkJoinPrimes.java}, which (other than the
+name) is identical to {\tt SerialPrimes.java}.
+You'll need to make {\tt ForkJoinPrimes} extend
+{\tt RecursiveTask<Integer>} or add a class that does so.
+Replace the loop in {\tt main} with a call to
+{\tt ForkJoinPool.commonPool().invoke} that runs one of your task objects.
+Give your task class a {\tt compute} method that returns the number of
+primes in its range.
+(Use recursion to split the problem, but calling {\tt isPrime} for
+the actual testing in its base case).
+Remember that {\tt RecursiveTask} objects return the value they
+calculate.
+
+One question that remains is what to use as a base case for the recursion;
+{\tt SumArray} stops recursing when its part of the array is size 100,
+but I want you to try different values for this class.
+In particular, try 500,000, which will stop the recursion after
+creating 2 tasks.
+Also try 250,000 (4 tasks) and some smaller values.
+How does the final task size affect the running time?
+(You probably want to make multiple runs at each size since there may
+be some random variability.)
+If you have more time, modify your code to split the array into 3
+parts instead of 2 so that you can try using 3 tasks.
+(Note that you can't just change the threshold to achieve this because
+the recursive calls split tasks into pairs.)
+
+\vfill
+\end{document}   
