@@ -53,4 +53,4 @@ Assignments are listed when they are due; the next assignment is typically given
 |Week 10| 5/26 | No class | |
 | | 5/27 | HW 10 due | Creating your own design problem | [assignment](homework/hw10.pdf) | | 
 | | 5/28 | Lecture 26 | Review and student design problems | [handout](lectures/studentDesign.pdf) |
-|Finals| 6/2 | Final exam | [exam](exams/final.pdf) |
+|Finals| 6/2 | | Final exam | [exam](exams/final.pdf) |
