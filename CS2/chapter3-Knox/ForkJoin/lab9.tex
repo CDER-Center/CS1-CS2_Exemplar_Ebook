@@ -1,0 +1,124 @@
+\documentclass{article}
+
+\usepackage{course}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{url}
+
+\newcommand{\code}[1]{{\tt #1}}
+\newcommand{\class}[1]{{\tt #1}}
+
+\def\handout{Lab 9}
+\def\coursenum{142}
+\def\coursetitle{Program design and methodology}
+\def\courseterm{Spring}
+\def\courseyear{2026}
+\parskip 6pt
+\parindent 0pt
+
+\begin{document}
+
+In this lab, we're returning to the fork-join solution technique, but
+using it for operations other than sum.
+
+\subsection*{Other Reductions using Fork-Join}
+
+Begin by downloading the given code ({\tt lab9given.zip}).
+Unzip this and open the {\tt lab9-reductions} folder it contains.
+The only code this has initially is {\tt SumArray.java}, the same
+program we worked with last week to sum the contents of an array.
+(I did remove the restriction that all the array values be between 0
+and 9.)
+
+Today, we'll look at changing this code to perform different
+operations.
+All the operations will have a similar structure; they are all called
+{\em reductions} because they reduce an array of input values to a
+single result.
+
+For the first modification, we will find the minimum.
+You can either modify {\tt SumArray} or make a copy of it with a more
+descriptive name.
+Either way, change the compute function so that it returns the minimum
+value rather than the sum.
+This requires small changes to both the base case (find the minimum of
+less than 100 values) and the recursive one (return the minimum of
+{\tt left} and {\tt right} rather than their sum).
+You will also want to change the serial computation in {\tt main} so
+that you can check your answer.
+
+Once you have that working, change the program again so that it
+returns both the minimum and the index where the minimum value occurs.
+To return multiple values, you'll need to create a class to store them
+both.
+Then use this class as the type of {\tt RecursiveTask} your code
+extends (modify at the top of the {\tt SumArray} class) and as the
+return value of {\tt compute}.
+Then, you'll again modify the base case and recursion step of
+{\tt compute} itself, as well as the serial implementation.
+
+Next, we'll implement the reduction of finding the $k^\text{th}$
+smallest value.
+($k=1$ means finding the minimum, $k=2$ means finding the second
+smallest, $k=3$ means finding the 3rd smallest, etc.)
+Begin by implementing the serial version of this, possibly starting
+specifically with $k=2$ (finding the second smallest value).
+This is a generalization of finding the smallest value.
+The algorithm for that was to traverse the array with a loop while
+keeping track of the smallest value seen so far.
+To find the $k^\text{th}$ smallest, use an array to keep track of the
+$k$ smallest values seen so far (in order).
+You can start by sorting the first $k$ values (the function
+{\tt Arrays.sort} could be useful).
+Then traverse the array, updating this array so that it always has the
+$k$ smallest values so far.
+
+Once you've got the serial code for $k^\text{th}$ smallest working,
+implement it in the fork-join framework.
+The object returned by {\tt compute} will now need to contain the
+array with the $k$ smallest.
+The base case will use your serial solution.
+To combine {\tt left} and {\tt right} in the recursion step, you'll
+want to do something like the merge operation in mergesort; the
+smallest value is one of the smallest values in the left and right
+solutions, the next smallest is either the other smallest value or the
+second smallest in the array you took the overall smallest from, etc.
+
+If you have more time, I have a challenge problem that goes beyond
+reductions (but is related to them).
+The goal is to implement {\em prefix sums}:
+create a new array whose value at index $i$ is the sum of all the
+values in the original array $\leq i$.
+For example, if the input is
+\begin{center}
+3 1 4 2 5 3 1 3 4
+\end{center}
+then the array of prefix sums is
+\begin{center}
+3 4 8 10 15 18 19 22 26
+\end{center}
+
+To implement this in parallel, you'll want to go back to the original
+{\tt SumArray} except that you should shrink the array and recursion
+threshold so you can see what is happening.
+I suggest you also use \% to restrict the array values to a small
+range.
+Then modify the code to take a second array; the original array is the
+input and the new array will be the output.
+You'll need 2 passes.
+The first pass is essentially the existing {\tt SumArray} except that
+it should write it's sum to the last cell of its part of the array in
+addition to returning it.
+
+For the second pass, you'll need a different extension of the
+{\tt RecursiveTask} class with the same recursion structure as your
+modified {\tt SumArray}. 
+Tasks of this new class will take the sum of all the values before its
+part of the array as an additional argument.
+With this extra information, its base case will be able to fill in the second array.
+For the recursion step, you'll need to read the array values written
+in the first pass to calculate all the appropriate arguments.
+
+\end{document}   

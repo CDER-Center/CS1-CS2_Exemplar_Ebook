@@ -1,0 +1,64 @@
+<html>
+<body bgcolor="#FFFFFF">
+
+<p>
+Here is the code we wrote today:
+
+<pre>
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class TestVacuumCleaner {
+
+	private VacuumCleaner v;
+	
+	@Before
+	public void setUp() {
+		v = new VacuumCleaner(10);
+	}
+
+	@Test
+	public void testUseEmpty() {
+		//tests of use when it starts empty
+		assertEquals(0, v.empty());
+		assertEquals(10, v.use(10));
+		v.charge();
+		assertEquals(10, v.empty());
+		assertEquals(10, v.use(11));
+		assertEquals(10, v.empty())
+	}
+
+	@Test
+	public void testUsePartial() {
+		//tests that use can partially fill
+		assertEquals(4, v.use(4));
+		v.charge();
+		assertEquals(6, v.use(7));
+	}
+
+	@Test
+	public void testPartialEmpty() {
+		//tests that empty works when partially full
+		assertEquals(4, v.use(4));
+		assertEquals(4, v.empty());
+	}
+
+	@Test
+	public void useDepletes() {
+		//check that use depletes the charge
+		assertEquals(3, v.use(3));
+		try {
+			v.use(4);
+			fail();
+		} catch(UnsupportedOperationException ex) {
+			//NOTHING
+		}
+	}
+}
+</pre>
+
+</body>
+</html>
