@@ -18,8 +18,9 @@ The slides are in 1 deck; for class, I would add review and homework discussion 
 The comments on the slides flesh out what I’d say and explain the answers to the clicker questions.
 
 Also related to these slides are the following:
-* The videos lecture1 and lecture2, which are recordings of me in class teaching this material.
+* I've recorded myself lecturing from these slides over two class sessions: [lecture1](https://youtu.be/LO2cbi-M7jI) and [lecture2](https://youtu.be/pQ3PQY4viXA).
 I'm using slightly older slides so the content doesn't exactly match the slides.
+
 * Materials for lab8, which asks students to parallel a prime counting routine.
 lab8.tex is a LaTeX version of handout (compile with course.sty), lab8.pdf is a pdf version of handout, lab8given.zip is a VS Code project with the given code.
 The lab is basically one step up from the summing code we do in class (they are parallelizing a different operation over a range of indices).
