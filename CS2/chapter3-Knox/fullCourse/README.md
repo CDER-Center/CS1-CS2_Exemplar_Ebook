@@ -1,7 +1,7 @@
 ## Entire Knox CS2 course (as taught Spring 2025) ##
 
 Here is a calendar form of the Spring 2025 offering of CS2 (called CS 142 at Knox).
-The course syllabus is [here](syllabus.pdf).
+The course syllabus is [here](syllabus.pdf), with PDC components in **bold**.
 Assignments are listed when they are due; the next assignment is typically given out shortly after the previous assignment is due.
 
 | Week | Date | Event | Content | Supporting materials |
@@ -40,21 +40,21 @@ Assignments are listed when they are due; the next assignment is typically given
 | | 5/7 | Lecture 18 | More recursive lists | [slides](lectures/Recursion2.pdf), [code](lectures/code0507.html) | 
 | | 5/8 | Lab 7 | Recursive linked lists | [handout](labs/lab7.pdf), [given code](labs/lab7given.zip) |
 | | 5/8 | HW 7 due | DFS; binary trees; tree traversals | [handout](homework/hw7.pdf) |
-| | 5/9 | Lecture 19 | Using multiple cores; fork and join | [slides](lectures/ForkJoin.pdf) |
-|Week 8| 5/12 | Lecture 20 | Work and span | [slides](lectures/ForkJoin2.pdf) |
+| | 5/9 | Lecture 19 | **Using multiple cores; fork and join** | [slides](lectures/ForkJoin.pdf) |
+|Week 8| 5/12 | Lecture 20 | **Work and span** | [slides](lectures/ForkJoin2.pdf) |
 | | 5/14 | Lecture 21 | Priority queues and heaps | [slides](lectures/Heaps.pdf) |
-| | 5/15 | Lab 8 | Using fork-join to count primes | [handout](labs/lab8.pdf), [given code](labs/lab8given.zip) |
+| | 5/15 | Lab 8 | **Using fork-join to count primes** | [handout](labs/lab8.pdf), [given code](labs/lab8given.zip) |
 | | 5/15 | HW 8 due | Recursive list ethods | [assignment](homework/hw8.pdf) |
 | | 5/16 | Lecture 22 | Heap operations; bucket and radix sorting | [slides1](lectures/Heaps2.pdf), [slides2](lectures/BucketSort.pdf) |
 |Week 9| 5/19 | Lecture 23 | Hashing | [slides](lectures/Hashing.pdf) | 
-| | 5/21 | Lecture 24 | More design problem practice; a bit more fork-join | [handout](lectures/handout.pdf), [slides](lectures/MoreDesign.pdf) |
-| | 5/22 | Lab 9 | Reductions using fork-join | [assignment](labs/lab9.pdf) |
-| | 5/22 | HW 9 due | Sorting; heaps; fork-join | [handout](labs/lab9.pdf), [given code](labs/lab9given.zip) |
-| | 5/23 | Lecture 25 | Finding kth smallest element; Graphs; graph traversal | [slides](lectures/Graphs.pdf) |
+| | 5/21 | Lecture 24 | More design problem practice; **a bit more fork-join** | [handout](lectures/handout.pdf), [slides](lectures/MoreDesign.pdf) |
+| | 5/22 | Lab 9 | **Reductions using fork-join** | [assignment](labs/lab9.pdf) |
+| | 5/22 | HW 9 due | Sorting; heaps; **fork-join** | [handout](labs/lab9.pdf), [given code](labs/lab9given.zip) |
+| | 5/23 | Lecture 25 | **Finding kth smallest element**; Graphs; graph traversal | [slides](lectures/Graphs.pdf) |
 |Week 10| 5/26 | No class | |
 | | 5/27 | HW 10 due | Creating your own design problem | [assignment](homework/hw10.pdf) | | 
 | | 5/28 | Lecture 26 | Review and student design problems | [handout](lectures/studentDesign.pdf) |
-|Finals| 6/2 | | Final exam | [exam](exams/final.pdf) |
+|Finals| 6/2 | | **Final exam** | [exam](exams/final.pdf) |
 
 ---
 
