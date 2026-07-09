@@ -19,3 +19,8 @@ Lab assignments aren't graded, but are used as a time for students to practice t
 This course is not in its final form.
 My plan is to move the fork-join material earlier in the course so that it can be used for other assignments.
 (Related to this, I plan on including some larger programming assignments.)
+
+---
+
+These materials are created by David Bunde <dbunde@knox.edu> and are released under the
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
