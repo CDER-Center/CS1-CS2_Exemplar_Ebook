@@ -1,0 +1,114 @@
+<html>
+<body bgcolor="#FFFFFF">
+
+<p>
+Here is the code we wrote today.
+First, the code for printing subsets.
+
+<pre>
+import java.util.*;
+
+public class Subsets {
+
+	public static int subsets(int n) {
+		//returns # of subsets of numbers 1 through n (inclusive)
+
+		if(n == 0)  //base case: only empty set if n=0
+			return 1;
+
+		int withoutN = subsets(n-1);  //subsets without n
+		int withN = subsets(n-1);     //subsets with n (= subset of 1..n-1 with n added)
+		return withoutN + withN;
+	}
+	
+	public static void main(String[] args) {
+		//System.out.println(subsets(3));
+		printSubsets(5, new LinkedList< Integer>());
+	}
+
+	public static void printSubsets(int n, LinkedList< Integer> alsoPrint) {
+		//prints subsets of numbers 1..n, each with the contents of alsoPrint
+
+		if(n == 0) {
+			for(Integer i : alsoPrint)
+				System.out.print(i + " ");
+			System.out.println();
+		} else {
+			//all subsets that don't include n
+			printSubsets(n-1, alsoPrint);
+
+			//all subsets that include n
+			alsoPrint.addFirst(n);
+			printSubsets(n-1, alsoPrint);
+			alsoPrint.removeFirst();
+		}
+	}
+}
+</pre>
+
+<p>
+Then the code for recursive lists.
+
+<pre>
+interface Node< T> {
+	public int size();  //returns size of list (# values) starting with this Node 
+
+	public boolean contains(T val);  //returns whether list contains val
+}
+
+class EmptyNode< T> implements Node< T> {
+	
+	public int size() {
+		return 0;
+	}
+
+	public boolean contains(T val) {
+		return false;
+	}
+}
+
+class NonEmptyNode< T> implements Node< T> {
+	T value;
+	Node< T> next;
+
+	public NonEmptyNode(T value, Node< T> next) {
+		this.value = value;
+		this.next = next;
+	}
+	
+	public int size() {
+		return 1 + next.size();
+	}
+
+	public boolean contains(T val) {
+		if(val.equals(value))
+			return true;
+		return next.contains(val);
+		//return val.equals(value) || next.contains(val);
+	}
+}
+
+public class RecursiveList< T> {
+
+	private Node< T> head;
+
+	public RecursiveList() {
+		head = new EmptyNode< T>();
+	}
+
+	public void addFront(T value) {
+		head = new NonEmptyNode< T>(value, head);
+	}
+
+	public int size() {
+		return head.size();
+	}
+
+	public boolean contains(T val) {
+		return head.contains(val);
+	}
+}
+</pre>
+
+</body>
+</html>

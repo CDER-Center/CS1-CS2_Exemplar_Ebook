@@ -2,7 +2,7 @@
 
 These are the materials for a modernized version of CS2, as developed and taught at Knox College.
 The main change was the added module about fork-join programming, which is presented [here](ForkJoin).
-To show how this material can be added to a course, we also present the [course schedule](schedule.md) for the Spring 2025 offering of the course at Knox.
+To show how this material can be added to a course, we also present the [entire course](fullCourse) for the Spring 2025 offering of the course at Knox.
 This includes all the assignments, labs, and lectures.
 (The fork-join material in the directory is slightly updated from what was used in the course.)
 
