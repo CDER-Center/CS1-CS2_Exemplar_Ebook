@@ -32,3 +32,8 @@ Prime testing is just checking 3 to sqrt(n) as possible divisors (I only check o
 
 [1] D. Grossman. Ready-For-Use: 3 Weeks of Parallelism and Concurrency in a Required Second-Year Data-Structures Course.
 In Proc. Workshop on Curricula for Concurrency and Parallelism, 2010.
+
+---
+
+These materials are created by David Bunde <dbunde@knox.edu> and are released under the
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
