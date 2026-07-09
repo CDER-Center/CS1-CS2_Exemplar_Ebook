@@ -1,6 +1,7 @@
-## Course schedule (Entire Spring 2025 Knox CS2 course) ##
+## Entire Knox CS2 course (as taught Spring 2025) ##
 
 Here is a calendar form of the Spring 2025 offering of CS2 (called CS 142 at Knox).
+The course syllabus is [here](syllabus.pdf).
 Assignments are listed when they are due; the next assignment is typically given out shortly after the previous assignment is due.
 
 | Week | Date | Event | Content | Supporting materials |
