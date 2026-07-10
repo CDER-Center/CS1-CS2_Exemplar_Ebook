@@ -1,0 +1,130 @@
+%student-created design problems from previous terms
+
+\documentclass{article}
+
+\usepackage{course}
+\usepackage{verbatim}
+\usepackage{fullpage}
+
+\def\handout{More design problems}
+\def\coursenum{142}
+\def\coursetitle{Program design and methodology}
+\def\courseterm{Spring}
+\def\courseyear{2025}
+\parskip 6pt
+\parindent 0pt
+
+\begin{document}
+
+Describe how you could solve each of the following problems using data
+structures we've learned so far.
+Specify the ADTs (List, Stack, Queue, Iterator, Set, Map, Priority Queue) you
+would use and how to use them to efficiently support the required
+operations.
+
+\begin{enumerate}
+
+\item
+Imagine you are a doctor who advises people with prediabetes. The most
+important part of controlling the
+disease is analyzing the dependency of the food a patient eats to
+their blood sugar. To prevent diabetes, a
+patient should figure out how each food affects their blood
+sugar. To help them do it, you decided to
+create the application that stores the name of the food that was eaten
+by the patient and what was their
+blood sugar after the consumption. Then, the next time a patient wants
+to eat this food, they can check
+how it affects their blood sugar before they eat it. You give them the
+application and tell them to store the
+name of the food and values of their sugar levels every time they try
+to eat something new.
+What ADT(s) would you use to implement this app?
+%map from string (food name) to integer (blood sugar reading)
+
+\item 
+Happy Vet is the busiest vet clinic in town. Everyday they have a
+lineup of regular health check-ups, however sometimes there are cases
+that require immediate action. Each vet at Happy Vet has their own
+tablet that lets them know who their next client is. The tablet has
+the name of the client, the type of visit needed, emergency or
+regular, and a description of the help needed. As long as there are no
+emergencies the vet will see that their next client is a regular
+health checkup. When there is an emergency they will have to take care
+of that case first before returning to the regular check-ups. If there
+is more than one emergency at a time each veterinarian will take the
+next case that is marked as an emergency before returning to the
+regular health checkups. If they fall behind on the emergencies then
+each vet will continue to take the oldest emergency available. If they
+fall behind on regular checkups they will finish the emergencies and
+then start in on the oldest regular checkup available.
+What ADTs would you use to implement this sytem?
+%2 queues
+
+\item 
+I need a program that allows me to feed my rats fairly every
+time it’s treat time. The same rat should not be first everytime, so
+they each need a turn to get fed first. (Basically, if a rat is fed
+first this time, it moves to the last place on the next feeding and
+all the other rats move one position earlier.)
+The exception is that rats who are sick or injured should have
+priority and should be fed first.
+The program should read in the rats in alphabetical order by name
+along with their position in the feeding order last time and whether
+they are sick or injured.
+Then it should output the order in which the rats should be fed this
+time.
+How would you implement this?
+%priority queue- queue doesn't work because order of reading them is
+%different than the output order 
+
+\item 
+You work for a minor league sports team. The team is getting a new
+mascot. The organization decides to hold a contest where fans submit
+suggestions for the name of the new mascot. Anyone who chooses to
+participate must say the name they think the new mascot should have
+with a brief reasoning for why they think it's a good
+name. Suggestions would then be sent to a group of panelists who would
+select their favorite. The contest was much more popular than the team
+imagined, and they are getting lots of duplicate names. Even if two
+entries suggest the same name, the panelists would still like to read
+the multiple arguments different people make for the name. You are in
+charge of making a program that allows the panelists to look at each
+name one at a time, together with all the arguments submitted with
+that name.
+What ADT(s) would you use to implement this program?
+%map from name to list of reasonings
+
+\item  
+You are a director of an American Legion Baseball Tournament and have
+to set up the end of year baseball tournament for all the teams in
+your state.
+Part of this is to maintain that statistics for each player such as
+homeruns, hits, and strikeouts.
+For pitchers, the system also needs to record wins, losses, innings pitched,
+and ERA.
+All of these stats would be tied to a player's name (we assume unique
+names), with updates happening as the game is played.
+For example, when a player makes a hit, your system must be able to
+update this stat.
+%map from name to stats
+
+\item 
+A streamer is currently streaming Mega Man 8-bit Deathmatch online
+matches and is finding it difficult to choose a character to play as.
+To solve this issue, the streamer decides to create a program that allows
+all of his or hers viewers, regardless of their subscription status,
+to submit character requests.
+The program will order these character requests and print them to the
+streamer in the order to play them.
+The order will mostly be oldest to the newest except that character
+requests submitted by viewers who are
+subscribed to the streamer have priority over those submitted by
+viewers without a subscription.
+In other words, the list will include character requests submitted by subscribers, in the order of the oldest to the
+newest, are presented to the streamer, and then character requests from regular viewers, in the order of the oldest to the newest.
+%two queues  
+
+\end{enumerate}
+
+\end{document}
