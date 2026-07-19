@@ -1,12 +1,12 @@
 ## Materials for modified Knox College CS1 course ##
 
-Institution: Knox College
-Course number and title: CS 141: Introduction to computer science (CS1)
-Programming language: Java
-Main unplugged activities: Flag Maker
-Main plugged activities: Programming Flag Maker, Knoxcraft, Greenfoot
-E-book chapter:
-Email Contact: Jaime Spacco <jspacco@knox.edu>
+Institution: Knox College <br>
+Course number and title: CS 141: Introduction to computer science (CS1) <br>
+Programming language: Java <br>
+Main unplugged activities: Flag Maker <br>
+Main plugged activities: Programming Flag Maker, Knoxcraft, Greenfoot <br>
+E-book chapter: <br>
+Email Contact: Jaime Spacco <jspacco@knox.edu> <br>
 
 ---
 
