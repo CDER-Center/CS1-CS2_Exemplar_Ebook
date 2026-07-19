@@ -27,7 +27,7 @@ Reading assignments are listed on the day they are due.
 | | 10/15 | Lecture 13 | Arrays | 9.1-9.3 | [slides](Archive/lectures/11_Arrays.pdf) |
 | | 10/16 | Lab 5 | Codingbat #2 and Testy McTestFace (TMTF) | | [codingbat](https://codingbat.com/home/dbunde@knox.edu/141-f25-lab5); [slides](Archive/labs/lab5/12_TMTF.pdf); TMTF for [windows](Archive/labs/lab5/TMTF-windows.jar), [mac-intel](Archive/labs/lab5/TMTF-mac-intel.jar), [mac-arm](Archive/labs/lab5/TMTF-mac-arm.jar), [linux](Archive/labs/lab5/TMTF-linux.jar) |
 | | 10/17 | Lecture 14 | Functions on arrays; returning an array | 8.1-8.2 | [slides](Archive/lectures/13_Arrays2.pdf) |
-|Week 6| 10/20 | Lecture 15 | Effective comments | 6.3 | [slides](Archive/lectures/14_Comments.pdf]; [handout](Archive/lectures/14_Comments_handout.pdf) |
+|Week 6| 10/20 | Lecture 15 | Effective comments | 6.3 | [slides](Archive/lectures/14_Comments.pdf); [handout](Archive/lectures/14_Comments_handout.pdf) |
 | | 10/22 | Institute Day; no class | | | |
 | | 10/23 | Lab 6 | Knoxcraft (loops, using remote services) | | [installation instructions](Archive/labs/lab6/installation.pdf); [instructions](Archive/labs/lab6/Lab06_Knoxcraft.pdf); [given code](Archive/labs/lab6/knoxcraft.zip); [report](Archive/labs/lab6/lab6report.pdf); [API for block types](https://jspacco.github.io/knoxcraftmod/javadoc/edu/knox/knoxcraftmod/client/TerpBlockType.html) | 
 | | 10/24 | Lecture 16 | | 6.1-6.2 | [slides](Archive/lectures/15_Arrays3.pdf); [given code](Archive/lectures/game-of-life.zip) |
