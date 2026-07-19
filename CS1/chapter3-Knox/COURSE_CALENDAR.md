@@ -44,7 +44,7 @@ Reading assignments are listed on the day they are due.
 | | 10/13 | Lab 9 | Recursion using codingbat | | [codingbat](https://codingbat.com/home/dbunde@knox.edu/141-f25-lab9) |
 | | 10/14 | Lecture 24 | Recursion and exam review | | |
 |Week 10| 11/17 | Lecture 25 | Exam review | | |
-|Finals|  | | Final exam | | [exam](exams/final.pdf) |
+|Finals|  | | Final exam | | [exam](Archive/exams/final.pdf) |
 
 ---
 
