@@ -23,7 +23,7 @@ Reading assignments are listed on the day they are due.
 | | 10/8 | Lecture 11 | Functions: design and practice | 5.3-5.4 | [slides](Archive/lectures/10_functions2.pdf) |
 | | 10/9 | Lab 4 | Codingbat #1 | | [codingbat](https://codingbat.com/home/dbunde@knox.edu/141-f25-lab4) |
 | | 10/10 | Lecture 12 | Practice for exam | | |
-|Week 5| 10/13 | Exam 1 | | 7.1-7.2 | [exam](Archive/exams/exam1.pdf) |
+|Week 5| 10/13 | <b>Exam 1</b> | | 7.1-7.2 | [exam](Archive/exams/exam1.pdf) |
 | | 10/15 | Lecture 13 | Arrays | 9.1-9.3 | [slides](Archive/lectures/11_Arrays.pdf) |
 | | 10/16 | Lab 5 | Codingbat #2 and Testy McTestFace (TMTF) | | [codingbat](https://codingbat.com/home/dbunde@knox.edu/141-f25-lab5); [slides](Archive/labs/lab5/12_TMTF.pdf); TMTF for [windows](Archive/labs/lab5/TMTF-windows.jar), [mac-intel](Archive/labs/lab5/TMTF-mac-intel.jar), [mac-arm](Archive/labs/lab5/TMTF-mac-arm.jar), [linux](Archive/labs/lab5/TMTF-linux.jar) |
 | | 10/17 | Lecture 14 | Functions on arrays; returning an array | 8.1-8.2 | [slides](Archive/lectures/13_Arrays2.pdf) |
