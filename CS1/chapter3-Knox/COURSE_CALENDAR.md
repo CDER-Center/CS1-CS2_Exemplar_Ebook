@@ -12,7 +12,7 @@ Reading assignments are listed on the day they are due.
 | | 9/18 | Lab 1 | Install VS Code and Java 21 | 1.6-1.11 | [instructions](Archive/labs/lab1/START_HERE_Lab01_Instructions.pdf); [assignment](Archive/labs/lab1/Lab01_Intro.pdf); [given code](Archive/labs/lab1/lab01.zip) |
 | | 9/19 | Lecture 3 | Turtle graphics; calling constructors and methods; for loops| | [slides](Archive/lectures/02_TurtleGraphics.pdf); [given code](Archive/lectures/turtles-inclass.zip); [sample projects](Archive/lectures/turtles-highlights.pdf) |
 |Week 2| 9/22 | Lecture 4 | Conditionals; booleans | 3.1-3.5 | [slides](Archive/lectures/03_Conditionals.pdf) |
-| | 9/24 | Lecture 5 | while and for loops | 4.1-4.3 and 2.9 | [while slides](Archive/lectures/04a_while_Loops.pdf); [for slides](Archive/lectures/04b_for_Loops.pdf); [given code](inclass1.zip) |
+| | 9/24 | Lecture 5 | while and for loops | 4.1-4.3 and 2.9 | [while slides](Archive/lectures/04a_while_Loops.pdf); [for slides](Archive/lectures/04b_for_Loops.pdf); [given code](Archive/lectures/inclass1.zip) |
 | | 9/25 | Lab 2 | Turtles (calling functions, loops) | [handout](Archive/labs/lab2/Lab02_Turtles.pdf); [given code](Archive/labs/lab2/lab02.zip); [report](Archive/labs/labs2/lab2report.pdf) |
 | | 9/26 | Lecture 6 | Nested loops | 4.4-4.5 | [slides](Archive/lectures/05_Nested_for_loops.pdf); [given code](Archive/lectures/inclass2.zip) |
 |Week 3| 9/29 | Lecture 7 | Strings and String methods | 4.7-4.9 | [slides](Archive/lectures/06_String_methods.pdf) | 
