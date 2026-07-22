@@ -13,6 +13,6 @@
 * Main plugged activities:
   * Serial Flag Coloring
   * Parallel Penny Sorting
-* E-book chapter: Chapter 5
+* E-book chapter: Chapter 4
 * Email Contact: <fsrishti@usi.edu>
 * Copyright/Distribution statement: All material is released under a Creative Commons Attribution-ShareAlike 4.0 International license.
