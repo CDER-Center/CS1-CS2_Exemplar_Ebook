@@ -4,7 +4,7 @@ Course-wide pre and post surveys were given to students in the Spring 2025 (No P
 
 #### Table 1: CASPER CS1 Survey Results for Experience Questions
 
-> *Note: Rows marked with **[CS1]** indicate topics covered in the course (originally highlighted in gray).*
+> *Note: Rows marked with **[CS1]** indicate topics covered in the course .*
 
 |  | No intervention |  |  | Intervention |  |  |
 | --- | --- | --- | --- | --- | --- | --- |
