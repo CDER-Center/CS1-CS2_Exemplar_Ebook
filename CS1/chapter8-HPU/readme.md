@@ -4,7 +4,7 @@
 	#Programming language: Java
 	#Main unplugged activities: FlagMaker, Penny Sorting, More Processors (MP) writing activity
 	#Main plugged activities: Penny Sorting
-	#E-book chapter: Chapter 9
+	#E-book chapter: Chapter 8
 	#Email Contact: mlsmith@hpu.edu
 	#Copyright/Distribution statement:
     #Citation of ebook: I will create this and a URL
