@@ -2,7 +2,7 @@ Activity: Penny
 Type: Plugged-in  
 Course: CS1  
 Estimated time: 30-50 minutes  
-PDC topics:comparison of sequential and parallel implementations,exploring concepts such as task decomposition, concurrency, synchronization, load balancing, scalability, and speedup  
+PDC topics: comparison of sequential and parallel implementations,exploring concepts such as task decomposition, concurrency, synchronization, load balancing, scalability, and speedup  
 Main files:sequential.java, parallel.java  
 Related e-book section: 8.4.1  
   
