@@ -16,18 +16,18 @@ This repository contains materials for an introductory computer science course (
 
 ### Unplugged Activities
 
-- zyBooks section 1.9 Parallel Computing
-- Unplugged Penny Search Activity
-- Unplugged Coin Addition Activity
+- [zyBooks section 1.9 Parallel Computing](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Penny_Search)
+- [Unplugged Penny Search Activity](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Penny_Search)
+- [Unplugged Coin Addition Activity](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Coin_Addition)
 
 ### Plugged-In Activities
 
-- Plugged-In OpenMP Array Creation
-- Plugged-In OpenMP Sum Assignment
-- Plugged-In Distributed Data USGS API Earthquake Assignment
-- Plugged-In Physical Computing 1 Introduction and Traffic Light
-- Plugged-In Physical Computing 2 Buttons and Multiple Processes
-- Plugged-In Physical Computing 3 Temperature Sensor
+- [Plugged-In OpenMP Array Creation](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Plugged_Activities/Plugged-In_OpenMP_Array_Creation)
+- [Plugged-In OpenMP Sum Assignment](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Plugged_Activities/Plugged-In_OpenMP_Array_Sum)
+- [Plugged-In Distributed Data USGS API Earthquake Assignment](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Plugged_Activities/Plugged-In_Distributed_Data)
+- [Plugged-In Physical Computing 1 Introduction and Traffic Light](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Plugged_Activities/Physical_Computing_1)
+- [Plugged-In Physical Computing 2 Buttons and Multiple Processes](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Plugged_Activities/Physical_Computing_2)
+- [Plugged-In Physical Computing 3 Temperature Sensor](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Plugged_Activities/Physical_Computing_3)
 
 ## E-book Chapter:  
 
