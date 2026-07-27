@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallel Array Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px 0;
+            width: 500px;
+        }
+        .card {
+            width: 30px;
+            height: 40px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 4px;
+        }
+        .arrow {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid red;
+            position: absolute;
+        }
+        #controls, #status {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Parallel Array Search Simulation</h2>
+
+<div id="controls">
+    <label>Number of Processors:</label>
+    <input type="number" id="numProcessors" min="1" max="10" value="3">
+    <label>Number to Search For:</label>
+    <input type="number" id="searchNumber" min="0" max="100" value="50">
+    <button onclick="startSearch()">Start Search</button>
+</div>
+
+<div id="card-container"></div>
+<div id="arrow-container"></div>
+<div id="status">
+    <p id="elapsedTime">Elapsed Time: 0 seconds</p>
+    <p id="searchStatus"></p>
+</div>
+
+<script>
+const cardContainer = document.getElementById("card-container");
+const arrowContainer = document.getElementById("arrow-container");
+const elapsedTimeDisplay = document.getElementById("elapsedTime");
+const searchStatusDisplay = document.getElementById("searchStatus");
+let cards = [];
+let arrows = [];
+let intervalId;
+let elapsedTime = 0;
+
+function createCards() {
+    cardContainer.innerHTML = "";
+    cards = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100));
+    cards.forEach(number => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.textContent = number;
+        cardContainer.appendChild(card);
+    });
+}
+
+function createArrows(numProcessors) {
+    arrowContainer.innerHTML = "";
+    arrows = [];
+    const cardsPerProcessor = Math.ceil(50 / numProcessors);
+
+    for (let i = 0; i < numProcessors; i++) {
+        const arrow = document.createElement("div");
+        arrow.className = "arrow";
+        arrow.style.top = "-20px";
+        arrow.style.left = `${i * cardsPerProcessor * 35}px`;
+        arrowContainer.appendChild(arrow);
+        arrows.push({ element: arrow, index: i * cardsPerProcessor });
+    }
+}
+
+function startSearch() {
+    const numProcessors = parseInt(document.getElementById("numProcessors").value);
+    const target = parseInt(document.getElementById("searchNumber").value);
+
+    if (numProcessors < 1 || numProcessors > 10 || target < 0 || target > 100) {
+        alert("Please enter valid input values.");
+        return;
+    }
+
+    createCards();
+    createArrows(numProcessors);
+    searchStatusDisplay.textContent = "Searching...";
+    elapsedTime = 0;
+    elapsedTimeDisplay.textContent = `Elapsed Time: ${elapsedTime} seconds`;
+
+    clearInterval(intervalId);
+    intervalId = setInterval(() => updateSearch(target), 1000);
+}
+
+function updateSearch(target) {
+    let found = false;
+
+    arrows.forEach((arrow, i) => {
+        if (arrow.index < cards.length) {
+            const cardElement = cardContainer.children[arrow.index];
+            cardElement.style.backgroundColor = "yellow";
+
+            if (cards[arrow.index] === target) {
+                found = true;
+                cardElement.style.backgroundColor = "green";
+                searchStatusDisplay.textContent = `Number ${target} found by Processor ${i + 1} at position ${arrow.index + 1}`;
+            } else {
+                arrow.index++;
+                arrow.element.style.left = `${arrow.index * 35}px`;
+            }
+        }
+    });
+
+    if (found || arrows.every(arrow => arrow.index >= cards.length)) {
+        clearInterval(intervalId);
+        searchStatusDisplay.textContent += "found"; 
+    } 
+    else if (arrows.every(arrow => arrow.index >= cards.length))
+    {
+        searchStatusDisplay.textContent += "Number not found.";
+    }
+    else {
+        // Update elapsed time only if search is still ongoing
+        elapsedTime++;
+        elapsedTimeDisplay.textContent = `Elapsed Time: ${elapsedTime} seconds`;
+    }
+}
+</script>
+
+</body>
+</html>
