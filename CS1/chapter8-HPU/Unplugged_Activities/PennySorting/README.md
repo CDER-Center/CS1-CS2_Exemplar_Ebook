@@ -2,7 +2,7 @@ Activity: Penny Activity
 Type: unplugged  
 Course: CS1  
 Estimated time: 45-65 minutes
-PDC topics: sequential versus parallel, task decomposition, data partitioning, speedup, scalability, communication overhead, and load balancing  
+PDC topics: Explore core PDC concepts such as, sequential versus parallel, task decomposition, data partitioning, speedup, scalability, communication overhead, and load balancing  
 Main files: InstructorSlides.pptx  
 Related e-book section: 8.3.2  
 
