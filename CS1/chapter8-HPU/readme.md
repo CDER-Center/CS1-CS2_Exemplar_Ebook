@@ -8,3 +8,5 @@
 	#Email Contact: mlsmith@hpu.edu
 	#Copyright/Distribution statement:
     #Citation of ebook: I will create this and a URL
+
+This directory contains the course calendar, the post-PDC course syllabus accompanied by a summary describing the revisions made to integrate PDC concepts and activities into the course, unplugged and plugged-in instructional activities, and the evaluation instruments, de-identified data, and analyses used to assess the effectiveness of the PDC integration. Together, these materials document the course implementation, instructional resources, curriculum modifications, and supporting assessment data.
