@@ -1,7 +1,7 @@
 Activity: Flag Maker  
-Type: unplugged
-Course: CS1
-Estimated time: 40-60 minutes
+Type: unplugged  
+Course: CS1  
+Estimated time: 40-60 minutes  
 PDC topics: Explore core PDC concepts, including concurrency, data parallelism, speedup,
 scalability, load balancing, synchronization, mutual exclusion, and processor coordination  
 Main files: InstructorSlides.pptx
