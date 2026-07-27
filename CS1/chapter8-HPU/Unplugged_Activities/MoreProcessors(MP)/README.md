@@ -2,7 +2,7 @@ Activity: More Processors Writing Activity
 Type: unplugged  
 Course: CS1  
 Estimated time: 39-60 minutes  
-PDC topics: sequential execution, concurrency, shared-memory parallelism, scheduling, load balancing, speedup, scalability, and the limitations described by Amdahl’s Law  
+PDC topics: Explore core PDC concepts such as, sequential execution, concurrency, shared-memory parallelism, scheduling, load balancing, speedup, scalability, and the limitations described by Amdahl’s Law  
 Main files: InstructorSlides.pptx    
 Related e-book section: 8.6.1   
 
