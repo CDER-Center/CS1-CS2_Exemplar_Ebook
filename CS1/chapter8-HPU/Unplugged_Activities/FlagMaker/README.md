@@ -4,7 +4,7 @@ Course: CS1
 Estimated time: 40-60 minutes  
 PDC topics: Explore core PDC concepts, including concurrency, data parallelism, speedup,
 scalability, load balancing, synchronization, mutual exclusion, and processor coordination  
-Main files: InstructorSlides.pptx
+Main files: InstructorSlides.pptx  
 Related e-book section: 8.3.1
 
 The Flag Maker Activity is an unplugged, hands-on classroom exercise that introduces introductory computer science students to fundamental PDC concepts through a collaborative, paper-based simulation. Students work together to color a flag using a variety of sequential and parallel execution strategies.
