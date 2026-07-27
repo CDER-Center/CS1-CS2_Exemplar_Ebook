@@ -1,1 +1,3 @@
+The Flag Maker Activity is an unplugged, hands-on classroom exercise that introduces introductory computer science students to fundamental PDC concepts through a collaborative, paper-based simulation. Students work together to color a flag using a variety of sequential and parallel execution strategies.
+As students progress from sequential execution to increasingly parallel execution models, they develop an intuitive understanding of how multiple processors can work together to solve a problem. The activity requires only printed flag templates and coloring materials, making it easy to implement in CS1 courses without requiring prior experience in parallel programming.
 
