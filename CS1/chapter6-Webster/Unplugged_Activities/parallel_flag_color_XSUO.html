@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netherlands Flag with Parallel Processors</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+        #timeElapsed {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Flag Coloring Activity</h1>
+        <br>
+        <h3>Xiaoyuan Suo</h3>
+        <h3>xiaoyuansuo51@webster.edu</h3>
+    </div>
+    <div>
+        <label for="processors">Enter number of processors: </label>
+        <input type="number" id="processors" value="1" min="1" max="30">
+        <button onclick="startAnimation()">Start</button>
+    </div>
+    <canvas id="flagCanvas" width="300" height="200"></canvas>
+    <div id="timeElapsed">Time elapsed: 0 seconds</div>
+
+    <script>
+        const canvas = document.getElementById('flagCanvas');
+        const context = canvas.getContext('2d');
+        const flagColors = ['#AE1C28', '#FFFFFF', '#21468B']; // Red, White, Blue
+        const flagHeight = canvas.height / 3;
+        const flagWidth = canvas.width;
+        let elapsedTime = 0;
+        let intervalId = null;
+
+        function clearCanvas() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function drawFlag(progress) {
+            clearCanvas();
+            for (let i = 0; i < 3; i++) {
+                context.fillStyle = flagColors[i];
+                context.fillRect(0, i * flagHeight, progress, flagHeight);
+            }
+        }
+
+        function updateElapsedTime() {
+            const timeDisplay = document.getElementById('timeElapsed');
+            timeDisplay.textContent = `Time elapsed: ${elapsedTime.toFixed(2)} seconds`;
+        }
+
+        function startAnimation() {
+            let processors = parseInt(document.getElementById('processors').value);
+            if (processors <= 0) {
+                alert("Please enter a valid number of processors."); //input validation
+                return;
+            }
+
+            clearCanvas();
+            elapsedTime = 0;
+            updateElapsedTime();
+
+            const pixelsPerSecondPerProcessor = 10;
+            const totalPixelsPerSecond = processors * pixelsPerSecondPerProcessor;
+            let progress = 0;
+            const totalTime = flagWidth / totalPixelsPerSecond; // Time 
+
+            if (intervalId) clearInterval(intervalId); // Clear previous timer 
+            intervalId = setInterval(() => {
+                elapsedTime += 0.1;
+                updateElapsedTime();
+            }, 100); // Update elapsed time every 0.1 seconds
+
+            function step() {
+                if (progress < flagWidth) {
+                    progress += totalPixelsPerSecond / 60; // Move based on frames (60 FPS)
+                    drawFlag(progress);
+                    requestAnimationFrame(step);
+                } else {
+                    clearInterval(intervalId); // Stop the timer 
+                }
+            }
+
+            step();
+        }
+    </script>
+</body>
+</html>

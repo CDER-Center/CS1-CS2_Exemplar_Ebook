@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Outbreak Simulation</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #grid { display: grid; grid-template-columns: repeat(20, 20px); gap: 1px; justify-content: center; }
+        .cell { width: 20px; height: 20px; background-color: blue; }
+        .zombie { background-color: red; }
+    </style>
+</head>
+<body>
+    <h1>Zombie Outbreak Simulation</h1>
+    <label>Threads: <span id="threadCount">1</span></label>
+    <input type="range" id="threadSlider" min="1" max="10" value="1">
+    <br><br>
+    <button onclick="startSimulation()">Start Simulation</button>
+    <div id="grid"></div>
+
+    <script>
+        const gridSize = 20;
+        let grid = [];
+        let running = false;
+
+        function createGrid() {
+            const gridContainer = document.getElementById("grid");
+            gridContainer.innerHTML = "";
+            grid = [];
+            
+            for (let i = 0; i < gridSize; i++) {
+                grid[i] = [];
+                for (let j = 0; j < gridSize; j++) {
+                    let cell = document.createElement("div");
+                    cell.classList.add("cell");
+                    gridContainer.appendChild(cell);
+                    grid[i][j] = { element: cell, state: "human" };
+                }
+            }
+            // Start with one zombie in the middle
+            let mid = Math.floor(gridSize / 2);
+            grid[mid][mid].state = "zombie";
+            grid[mid][mid].element.classList.add("zombie");
+        }
+
+        function spreadZombie() {
+            if (!running) return;
+            let newZombies = [];
+            
+            for (let i = 0; i < gridSize; i++) {
+                for (let j = 0; j < gridSize; j++) {
+                    if (grid[i][j].state === "zombie") {
+                        let neighbors = [
+                            [i - 1, j], [i + 1, j], [i, j - 1], [i, j + 1]
+                        ];
+                        neighbors.forEach(([x, y]) => {
+                            if (x >= 0 && x < gridSize && y >= 0 && y < gridSize && grid[x][y].state === "human") {
+                                newZombies.push([x, y]);
+                            }
+                        });
+                    }
+                }
+            }
+            newZombies.forEach(([x, y]) => {
+                grid[x][y].state = "zombie";
+                grid[x][y].element.classList.add("zombie");
+            });
+            
+            if (newZombies.length > 0) {
+                let threads = parseInt(document.getElementById("threadSlider").value);
+                let delay = Math.max(50, 500 / threads);
+                setTimeout(spreadZombie, delay);
+            } else {
+                running = false;
+            }
+        }
+
+        function startSimulation() {
+            running = true;
+            createGrid();
+            spreadZombie();
+        }
+        
+        document.getElementById("threadSlider").addEventListener("input", function() {
+            document.getElementById("threadCount").textContent = this.value;
+        });
+        
+        createGrid();
+    </script>
+</body>
+</html>
