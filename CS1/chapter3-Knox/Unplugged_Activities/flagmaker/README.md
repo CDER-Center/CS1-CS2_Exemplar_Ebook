@@ -12,6 +12,7 @@ Files:
  - Instruction slides for unplugged activity:
 [pdf](unplugged_flagmaker_instructions.pdf),
 [pptx](unplugged_flagmaker_instructions.pptx)
- - Numbered grids for scenario 1 ([pdf](numbered_grid1.pdf), [docx](numbered_grid1.docx)), scenario 2 ([pdf](numbered_grid2.pdf), [docx](numbered_grid2.docx)), scenario 3 ([pdf](numbered_grid3.pdf), [docx](numbered_grid3.docx)), and scenario 4 ([pdf](numbered_grid4.pdf), [docx](numbered_grid4.docx))
+- [Blank grid paper](blank_grid.pdf)
+- Numbered grids for scenario 1 ([pdf](numbered_grid1.pdf), [docx](numbered_grid1.docx)), scenario 2 ([pdf](numbered_grid2.pdf), [docx](numbered_grid2.docx)), scenario 3 ([pdf](numbered_grid3.pdf), [docx](numbered_grid3.docx)), and scenario 4 ([pdf](numbered_grid4.pdf), [docx](numbered_grid4.docx))
  - Conceptual slides for after the unplugged activity: [pdf](postUnplugged.pdf), [pptx](postUnplugged.pptx)
  
