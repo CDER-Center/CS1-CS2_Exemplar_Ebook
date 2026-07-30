@@ -1,0 +1,39 @@
+<html>
+<body bgcolor="#FFFFFF">
+
+<p>
+Here is the code we wrote today:
+
+<pre>
+  public boolean contains(T s) {
+    //returns whether the list contains value s
+
+    boolean flag = false;  //whether we've seen s
+    Node curr = head;
+    while(curr != null) {
+      if(curr.value.equals(s))
+        flag = true;
+      curr = curr.next;
+    }
+    return flag;
+  }
+
+  //(Can also implement contains by immediately returning true when s
+  // is found and then returning false after the loop.)
+
+  public T get(int index) {
+        //return value at given index or throw IndexOutOfBoundsException
+        //as written, this is close, but doesn't work in all cases
+
+        int num = 0;  //index of current node
+        Node curr = head;
+        while(num < index) {
+            curr = curr.next;
+            num++;
+        }
+        return curr.value;
+    }
+</pre>
+
+</body>
+</html>
