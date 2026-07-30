@@ -13,6 +13,7 @@ Main files:
  - Slides introducing Greenfoot: [pdf](18_Greenfoot_and_Classes.pdf)
  - Lab handout for first Greenfoot lab: [Google Doc](https://docs.google.com/document/d/1v3HniorMJOJCZs71rkPqGjpSL7AW4Va1wvs7hxwtc0U/), [pdf](Lab07_Games_with_Greenfoot.pdf)
  - Slides introducing RPC and Rest, talking about the structure of a Tic-Tac-Toe server: [Google Doc](https://docs.google.com/presentation/d/1r5QDxEMPcyvEn2vBocW0q-ZBq3CotYVU-JkNoERvKr4/), [pdf](TicTacToe_server.pdf)
+ - [Server that plays Connect-4 and Tic-Tac-Toe](https://github.com/jspacco/cder-games)  (it's the same server for both; behavior depends on the requests it receives)
  - [Code for Tic-Tac-Toe server](TicTacToe.zip)
  - Lab handout for second Greenfoot lab: [pdf](Lab08_Connect4.pdf)
  - [Given code for second lab](Connect4.zip)
