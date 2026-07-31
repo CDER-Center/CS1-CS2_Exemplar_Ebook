@@ -9,7 +9,7 @@ This repository contains materials for an introductory computer science course (
 | **Institution** | Casper College |
 | **Course** | COSC 1030: Computer Science I |
 | **Course level** | CS1 |
-| **Programming language** | C++ primarily, some Python|
+| **Programming language** | C++ primarily, some Python |
 | **E-book chapter** | Chapter 7: CS1 Course Package - Casper College |
 
 ## Activities
@@ -31,7 +31,7 @@ This repository contains materials for an introductory computer science course (
 
 ## E-book Chapter:  
 
-Chapter 8
+Chapter 7
 
 ## Contact
 
