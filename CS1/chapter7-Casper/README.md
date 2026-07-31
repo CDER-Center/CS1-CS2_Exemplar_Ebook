@@ -16,7 +16,7 @@ This repository contains materials for an introductory computer science course (
 
 ### Unplugged Activities
 
-- [zyBooks section 1.9 Parallel Computing](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Penny_Search)
+- [zyBooks section on Parallel Computing](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Penny_Search)
 - [Unplugged Penny Search Activity](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Penny_Search)
 - [Unplugged Coin Addition Activity](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Coin_Addition)
 
