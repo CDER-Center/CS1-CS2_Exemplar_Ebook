@@ -1,0 +1,77 @@
+<html>
+<body bgcolor="#FFFFFF">
+
+<p>
+Here is the code we wrote today:
+
+<pre>
+//////////
+//In Node:
+//////////
+  
+	public T get(int index);  //returns value at given index (or throw IndexOutOfBoundsException)
+
+	public int indexOf(T val);  //returns index of first occurrence of val (or -1 if it isn't there)
+
+	public Node< T> add(T val);  //return result of adding val to end of list
+
+///////////////
+//In EmptyNode:
+///////////////
+    
+	public T get(int index) {
+		throw new IndexOutOfBoundsException();
+	}
+
+	public int indexOf(T val) {
+		return -1;
+	}
+
+	public Node< T> add(T val) {
+		return new NonEmptyNode< T>(val, this);
+	}
+
+//////////////////
+//In NonEmptyNode:
+//////////////////
+	
+	public T get(int index) {
+		if(index == 0)  //if looking for first value, return it
+			return value;
+
+		return next.get(index-1);
+	}
+
+	public int indexOf(T val) {
+		if(value.equals(val))  //check if my value is what's being looked for 
+			return 0;
+		int result = next.indexOf(val);
+		if(result == -1)
+			return -1;
+		return result + 1;
+	}
+
+	public Node< T> add(T val) {
+		next = next.add(val);
+		return this;
+	}
+
+///////////////////
+//In RecursiveList:
+///////////////////
+
+	public T get(int index) {
+		return head.get(index);
+	}
+
+	public int indexOf(T val) {
+		return head.indexOf(val);
+	}
+
+	public void add(T val) {
+		head = head.add(val);
+	}
+</pre>
+
+</body>
+</html>

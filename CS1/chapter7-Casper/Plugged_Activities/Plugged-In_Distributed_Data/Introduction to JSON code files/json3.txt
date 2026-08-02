@@ -1,0 +1,18 @@
+{
+   "places" : ["Arizona", "New York", "Georgia", "Texas"],
+  
+   "people": [
+      {
+        "name": "Bob",
+        "hobbies": ["reading", "gaming"]
+      },
+      {
+        "name": "Mary",
+        "hobbies": ["hiking", "sewing"]
+      },
+      {
+        "name": "Juan",
+        "hobbies": ["archery", "skiing"]
+      }
+   ]
+}

@@ -1,0 +1,3 @@
+This directory contains the pre-course, post-course, and PDC activity surveys (including quizzes and engagement surveys) used during Fall 2024, Fall 2025, and Spring 2026. It also includes the corresponding anonymized survey data.
+Note: Survey instruments evolved over the course of the project. Some survey questions were revised between semesters and across individual PDC activities as the instructional materials and assessment instruments were refined. Consequently, not all survey questions are directly comparable across semesters or activities. In addition, not all collected data have been analyzed.
+This directory also contains IRB documentation related to the study.
