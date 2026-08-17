@@ -23,7 +23,7 @@ given out shortly after the previous assignment is due.
 | | 4/11 | Lecture 8 | Remove from linked list | [slides](Archive/lectures/LinkedList3.pdf), [code](Archive/lectures/code0411.html) |
 | | 4/11 | HW 3 due | Linked list implementation | [handout](Archive/homework/hw3.pdf), [given code](Archive/homework/hw3given.zip) |
 |Week 4| 4/14 | Lecture 9 | Running time; Big-O | [slides](Archive/lectures/RunningTimes.pdf)
-| | 4/16 | Lecture 10 | idea of amortization; Stack and Queue ADTs and their implementations | [slides](Archive/lectures/StackAndQueues.pdf) |
+| | 4/16 | Lecture 10 | idea of amortization; Stack and Queue ADTs and their implementations | [slides](Archive/lectures/StacksAndQueues.pdf) |
 | | 4/16 | HW 4 due | Complete lab 3 | [handout](Archive/homework/hw4.pdf) | 
 | | 4/17 | Lab 4 | Timing data strcutures | [handout](Archive/labs/lab4.pdf), [given code](Archive/labs/lab4given.zip) |
 | | 4/18 | Lecture 11 | Design problems; StringBuilder | [handout](Archive/lectures/design.pdf), [slides](Archive/lectures/StringBuilder.pdf) |
