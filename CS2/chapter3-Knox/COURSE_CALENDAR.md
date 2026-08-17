@@ -34,13 +34,13 @@ given out shortly after the previous assignment is due.
 | | 4/25 | Lecture 13 | More logs; running time of mergesort; quicksort; inheritance | [slides1](Archive/lectures/Sorting2.pdf), [slides2](Archive/lectures/BinarySearch.pdf) | 
 |Week 6| 4/28 | Lecture 14 | Set and Map ADTs; binary search; trees; BST definition and contains | [slides](Archive/lectures/BinarySearch2.pdf) |
 | | 4/30 | Lecture 15 | Discussion of lab 5; BST add and remove | [slides](Archive/lectures/BinarySearch3.pdf) | 
-| | 4/30 | HW 6 due | Writing test cases; determining size of a connected component | [handout](Archive/homework/hw6.pdf), [given code](Archive/homework/hw6given.pdf) | 
-| | 5/1 | Lab 6 | Building the friendship graph | [handout](labs/lab6.pdf), [given code](Archive/labs/lab6given.zip) |
+| | 4/30 | HW 6 due | Writing test cases; determining size of a connected component | [handout](Archive/homework/hw6.pdf), [given code](Archive/homework/hw6given.zip) | 
+| | 5/1 | Lab 6 | Building the friendship graph | [handout](Archive/labs/lab6.pdf), [given code](Archive/labs/lab6given.zip) |
 | | 5/2 | Lecture 16 | Tree traversals; Towers of Hanoi | [slides](Archive/lectures/TreeTraversals.pdf) |
 |Week 7| 5/5 | Lecture 17 | Recursive subset enumeration; recursive linked lists | [slides](Archive/lectures/Recursion.pdf), [code](Archive/lectures/code0505.html) |
 | | 5/7 | Lecture 18 | More recursive lists | [slides](Archive/lectures/Recursion2.pdf), [code](Archive/lectures/code0507.html) | 
 | | 5/8 | Lab 7 | Recursive linked lists | [handout](Archive/labs/lab7.pdf), [given code](Archive/labs/lab7given.zip) |
-| | 5/8 | HW 7 due | DFS; binary trees; tree traversals | [handout](hrchive/homework/hw7.pdf) |
+| | 5/8 | HW 7 due | DFS; binary trees; tree traversals | [handout](Archive/homework/hw7.pdf) |
 | | 5/9 | Lecture 19 | **Using multiple cores; fork and join** | [slides](Archive/lectures/ForkJoin.pdf) |
 |Week 8| 5/12 | Lecture 20 | **Work and span** | [slides](Archive/lectures/ForkJoin2.pdf) |
 | | 5/14 | Lecture 21 | Priority queues and heaps | [slides](Archive/lectures/Heaps.pdf) |
