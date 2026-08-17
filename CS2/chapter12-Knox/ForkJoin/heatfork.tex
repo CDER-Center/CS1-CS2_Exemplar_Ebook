@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\usepackage{course}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{alltt}
+\usepackage{url}
+
+\newcommand{\code}[1]{{\tt #1}}
+\newcommand{\class}[1]{{\tt #1}}
+
+\def\handout{Lab 1}
+\def\coursenum{2}
+\def\coursetitle{Heat diffusion}
+\def\courseterm{Next}
+\def\courseyear{2025}
+\parskip 6pt
+\parindent 0pt
+
+\begin{document}
+
+In this lab, you'll be parallelizing the given code for a heat
+diffusion simulator.
+
+\subsection*{Heat diffusion in parallel}
+
+Begin by downloading the given code.
+Compile and run {\tt Main.java} inside the {\tt serialHeat} package.
+Run the program, drawing a scenario and then running a simulation for
+5000 timesteps.
+As shown in class, I like scenarios with some heaters near an
+insulator.
+You want a scenario that is simple enough that you'll be able to
+approximately duplicate it.
+(The specific contents of the scenario don't heavily affect the
+running time, but our running time comparisons will be more legitimate
+if we're running the same thing...)
+Make a note of the running time (printed after the 5000th time step).
+
+The focus of our changes is the {\tt diffuse} method in
+{\tt DataArray.java}.
+This method is a doubly-nested loop that calls {\tt diffusePixel} to update
+each pixel in the simulation during each time step of the simulation.
+This is the most time-consuming part of the simulation and its parts
+are also independent so it makes sense to focus our parallelization
+efforts here.
+We are going to split the iterations in {\tt diffuse} between different tasks that
+can run in parallel.
+
+To do this, let's use the fork-join framework.
+The file {\tt SumArray.java} contains the example of summing array
+values that we worked with in class.
+You'll want to adapt this by creating an extension of
+{\tt RecursiveTask} to parallelize the {\tt y} loop in {\tt diffuse}.
+Your method won't have a meaningful return value so just make the
+{\tt compute} method return 0.\footnote{There is a different class
+{\tt RecursiveAction} that you could use instead, but I'm opting for
+{\tt RecursiveTask} since that's what we used in class.}
+The threshold does not seem to have a large effect on the running
+time.
+Follow the example of {\tt SumArray} and just split the {\tt y} loop;
+the whole {\tt x} loop goes into the base case of the recursion.
+It is easiest if you create your new class inside the definition of
+{\tt DataArray} (i.e. make it an inner class) so that it will have
+access to all the attributes of {\tt DataArray}.
+If you do this, the only attributes of the class will be {\tt low} and
+{\tt hi}.
+If you make the class outside the definition of {\tt DataArray}, then
+you'll have to pass it {\tt X}, {\tt isInsulator}, {\tt isHeater},
+{\tt currArr}, and {\tt nextArr}.
+
+After you've parallelized the program, run it and see how long
+it takes for the same scenario that you drew originally.
+
+\vfill
+\end{document}   
