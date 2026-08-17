@@ -18,7 +18,7 @@ given out shortly after the previous assignment is due.
 | | 4/4 | Lecture 5 | More testing practice; Java interfaces; OO philosophy; implementation of array-based list methods | [slides1](Archive/lectures/OO2.pdf), [code](Archive/lectures/code0404.html), [slides2](Archive/lectures/ArrayList.pdf) | 
 |Week 3| 4/7 | Lecture 6 | More ArrayList methods; linked lists | [slides1](Archive/lectures/ArrayList2.pdf), [slides2](Archive/lectures/LinkedList.pdf) |
 | | 4/8 | HW 2 due | JUnit testing | [handout](Archive/homework/hw2.pdf), [given code](Archive/homework/hw2given.zip) |
-| | 4/9 | Lecture 7 | More linked list implentation (finishing size, contains, the standard loop, clear, add, get); Iterator ADT | [slides](lectures/LinkedList2.pdf), [code](Archive/lectures/code0409.html) | 
+| | 4/9 | Lecture 7 | More linked list implentation (finishing size, contains, the standard loop, clear, add, get); Iterator ADT | [slides](Archive/lectures/LinkedList2.pdf), [code](Archive/lectures/code0409.html) | 
 | | 4/10 | Lab 3 | Finding common queries (lists and iterators) | [handout](Archive/labs/lab3.pdf), [given code](Archive/labs/lab3given.zip) |
 | | 4/11 | Lecture 8 | Remove from linked list | [slides](Archive/lectures/LinkedList3.pdf), [code](Archive/lectures/code0411.html) |
 | | 4/11 | HW 3 due | Linked list implementation | [handout](Archive/homework/hw3.pdf), [given code](Archive/homework/hw3given.zip) |
