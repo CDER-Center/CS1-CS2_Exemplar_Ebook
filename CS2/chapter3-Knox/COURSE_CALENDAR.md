@@ -8,7 +8,7 @@ given out shortly after the previous assignment is due.
 | Week | Date | Event | Content | Supporting materials |
 |------|------|-------|---------|----------------------|
 |Week 1| 3/26 | Lecture 1 | Course policies, Java review | [slides](Archive/lectures/FirstDay.pdf), [code](Archive/lectures/code0326.html), [handout](Archive/lectures/javaReview.pdf) |
-| | 3/27 | Lab 1 | Implementing array-based lists | [handout](labs/Archive/lab1.pdf) |
+| | 3/27 | Lab 1 | Implementing array-based lists | [handout](Archive/labs/lab1.pdf) |
 | | 3/28 | Lecture 2 | Java review; ADTs; array-based list implementation | [slides](Archive/lectures/JavaAndList.pdf), [code](Archive/lectures/code0328.html) |
 |Week 2| 3/31 | Lecture 3 | Automated testing; JUnit | [slides](Archive/lectures/Testing.pdf) |
 | | 3/31 | HW 1.2a due | Codingbat practice problems | [assignment](Archive/homework/hw1.pdf) |
