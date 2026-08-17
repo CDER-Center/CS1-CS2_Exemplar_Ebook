@@ -49,8 +49,8 @@ given out shortly after the previous assignment is due.
 | | 5/16 | Lecture 22 | Heap operations; bucket and radix sorting | [slides1](Archive/lectures/Heaps2.pdf), [slides2](Archive/lectures/BucketSort.pdf) |
 |Week 9| 5/19 | Lecture 23 | Hashing | [slides](Archive/lectures/Hashing.pdf) | 
 | | 5/21 | Lecture 24 | More design problem practice; **a bit more fork-join** | [handout](Archive/lectures/design2.pdf), [slides](Archive/lectures/MoreDesign.pdf) |
-| | 5/22 | Lab 9 | **Reductions using fork-join** | [assignment](Archive/labs/lab9.pdf), [given code](Archive/labs/lab9given.zip) |
-| | 5/22 | HW 9 due | Sorting; heaps; **fork-join** | [handout](Archive/homework/hw9.pdf) |
+| | 5/22 | Lab 9 | **Reductions using fork-join** | [handout](Archive/labs/lab9.pdf), [given code](Archive/labs/lab9given.zip) |
+| | 5/22 | HW 9 due | Sorting; heaps; **fork-join** | [assignment](Archive/homework/hw9.pdf) |
 | | 5/23 | Lecture 25 | **Finding kth smallest element**; Graphs; graph traversal | [slides](Archive/lectures/Graphs.pdf) |
 |Week 10| 5/26 | No class | |
 | | 5/27 | HW 10 due | Creating your own design problem | [assignment](Archive/homework/hw10.pdf) | | 
