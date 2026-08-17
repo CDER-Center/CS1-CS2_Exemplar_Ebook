@@ -44,7 +44,7 @@ given out shortly after the previous assignment is due.
 | | 5/9 | Lecture 19 | **Using multiple cores; fork and join** | [slides](Archive/lectures/ForkJoin.pdf) |
 |Week 8| 5/12 | Lecture 20 | **Work and span** | [slides](Archive/lectures/ForkJoin2.pdf) |
 | | 5/14 | Lecture 21 | Priority queues and heaps | [slides](Archive/lectures/Heaps.pdf) |
-| | 5/15 | Lab 8 | **Using fork-join to count primes** | [handout](labs/lab8.pdf), [given code](Archive/labs/lab8given.zip) |
+| | 5/15 | Lab 8 | **Using fork-join to count primes** | [handout](Archive/labs/lab8.pdf), [given code](Archive/labs/lab8given.zip) |
 | | 5/15 | HW 8 due | Recursive list ethods | [assignment](Archive/homework/hw8.pdf) |
 | | 5/16 | Lecture 22 | Heap operations; bucket and radix sorting | [slides1](Archive/lectures/Heaps2.pdf), [slides2](Archive/lectures/BucketSort.pdf) |
 |Week 9| 5/19 | Lecture 23 | Hashing | [slides](Archive/lectures/Hashing.pdf) | 
