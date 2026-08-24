@@ -4,6 +4,6 @@ Introduction to parallel computing and OpenMP in C++ Part 2: shared variables --
 
 array_sum_naive.cpp This is the solution that the students should come up with that does not work.
 
-The explanation for why it doesn't work starts with the issue of shared variables which is presented in the [Unplugged Coin Addition Activity]([.](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS1/chapter7-Casper/Unplugged_Activities/Unplugged_Coin_Addition).  
+The explanation for why it doesn't work starts with the issue of shared variables which is presented in the [Unplugged Coin Addition Activity]([.](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS2/chapter17-Casper/Unplugged_Activities/Unplugged_Coin_Addition).  
 
 array_sum_solution.cpp   Once the students understand the shared problem the solution can be presented.  
