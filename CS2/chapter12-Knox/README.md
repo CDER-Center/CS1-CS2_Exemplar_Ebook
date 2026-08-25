@@ -1,10 +1,14 @@
 ## Materials for modified Knox College CS2 course ##
 
-These are the materials for a modernized version of CS2, as developed and taught at Knox College.
-The main change was the added module about fork-join programming, which is presented [here](ForkJoin).
-To show how this material can be added to a course, we also present the [entire course](fullCourse) for the Spring 2025 offering of the course at Knox.
-This includes all the assignments, labs, and lectures.
-(The fork-join material in the directory is slightly updated from what was used in the course.)
+Institution: Knox College
+Course number and title: CS 142: Program design & methodology (CS2)
+Programming language: Java
+Main unplugged activities: N/A
+Main plugged activities: [ForkJoin](Plugged_Activities/ForkJoin)
+E-book chapter:
+Email contact: David Bunde <dbunde@knox.edu>
+
+---
 
 By way of context, Knox uses an academic calendar where each term is slightly less than 10 weeks.
 The CS2 class meets 4 times a week, 3 lectures (MWF) and a lab (Th this term).
@@ -22,5 +26,5 @@ My plan is to move the fork-join material earlier in the course so that it can b
 
 ---
 
-These materials are created by David Bunde <dbunde@knox.edu> and are released under the
+These materials are released under the
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
