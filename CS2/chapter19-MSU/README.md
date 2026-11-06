@@ -48,7 +48,7 @@ asynchronous, framework-controlled program execution.
 ## Repository Organization
 
 ```text
-chapter9-MSU/
+chapter18-MSU/
   COURSE_CALENDAR.md
   Detailed_Pre_and_Post_Syllabus/
   Evaluation_Data_and_Analysis/
