@@ -43,4 +43,4 @@ Copyright/Distribution statement: All material is released under a Creative Comm
 
 ## Citation
 
-_E-book citation to be added._
+How to cite this e-book: Prasad, S. K., Weems, C., Thota, N., Sussman, A., Vaidyanathan, R., Gannod, G., Crockett, A., Bunde, D., Spacco, J., Srivastava, S., Bourke, C., Suo, X., Maher, P., Gruner, C., Smith, M., Zhu, M. and Wang, J. Aug. 2026 (early release). Toward Modern Models of Introductory Computing Courses – CS1 and CS2 Course Exemplars infused with Parallel and Distributed Computing Concepts. CDER Center, NSF Award #2321015. https://NSFexemplar.CDERcenter.org/
