@@ -20,6 +20,9 @@ This repository contains materials for a Data Structures & Algorithms course at 
 - [Sorting Algorithms with OpenMP](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS2/chapter11-TTU/Plugged_Activities/Sorting%20Algorithms%20with%20OpenMP)
 - [Lab 5: GitHub Copilot & OOP Design with Binary Search](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS2/chapter11-TTU/Plugged_Activities/Lab%205%20CSC%201310%20Spring%202026)
 
+### Unplugged Activity
+- [Overly Complicated Machine](https://github.com/CDER-Center/CS1-CS2_Exemplar_Ebook/tree/main/CS2/chapter11-TTU/Unplugged%20Activities/Overly_Complicated_Machine)
+
 ## Contact
 
 For questions about these materials, contact [acrockett@tntech.edu](mailto:acrockett@tntech.edu).
