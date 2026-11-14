@@ -1,0 +1,12 @@
+How students should run it (exact commands)
+Default run (good for most laptops)
+python parallel_overhead_lab.py
+
+Force “really bad” naive overhead (more tasks)
+python parallel_overhead_lab.py --naive_chunk_len 2000 --naive_chunksize 1
+
+Tune optimized version (fewer tasks, better scheduling)
+python parallel_overhead_lab.py --opt_chunk_len 1000000 --opt_chunksize 16
+
+Use more cores (if available)
+python parallel_overhead_lab.py --procs 8
